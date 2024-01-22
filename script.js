@@ -1,4 +1,48 @@
-let bill = 120
+function calculateAndDisplay()
+{
+//getting values and storing as variables//
+ let bill = parseFloat(document.getElementById('totalBill').value)
+ let numOfPpl = parseFloat(document.getElementById(numOfPpl).value)
+ let serviceQuality = document.getElementById('serviceQuality').value
+
+//calculate tip, total bill, and amount per person using helper functions// 
+let tip = calculateTip(bill, serviceQuality)
+let totalBill = calculateTotalBill(bill, tip)
+let amtPerPers = calculateAmtPerPerson(totalBill, numOfPpl)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* let bill = 120
 let numOfPpl = 5
 let serviceQuality = 'Great'
 
@@ -30,4 +74,4 @@ let amtPerPers = calcAmtPerPrs(totalBill, numOfPpl)
 
 console.log('Tip: $' + tip)
 console.log('Total Bill: $' + totalBill)
-console.log('Amount per person: $' + amtPerPers)
+console.log('Amount per person: $' + amtPerPers) */
